@@ -1,0 +1,64 @@
+<div class="row" id="featuresHeading">
+    <div class="col-12">
+        <font color="505050"><h2 style="font-family:Calibri"><strong>What are you Looking for?</strong></h2></font>
+        <p class="lead"></p>
+    </div>
+</div>
+<div class="row" id="features">
+<div class="col-md-4 feature">
+        <div class="panel">
+            <div class="panel-heading">
+                <font color="bd9130"><h3 class="panel-title", style="font-family:Calibri"><strong>CARS/TRUCKS/SUV</strong></h3></font>
+            </div>
+             <%= image_tag("sedan.png", :size => "150x150", :alt => "Residentials", :style =>"margin-right:25px; margin-top:10px;" ) %>
+            <p></p>
+            <%= link_to t('Service'), pages_car_path, class: "btn btn-default", data: {no_turbolink: true} %>
+        </div>
+</div>
+    <div class="col-md-4 feature">
+        <div class="panel">
+            <div class="panel-heading">
+                 <font color="bd9130"><h3 class="panel-title", style="font-family:Calibri"><strong>SEMI TRUCKS</strong></h3></font>
+            </div>
+             <%= image_tag("semitrailer.png", :size => "150x150", :alt => "Residentials", :style =>"margin-right:25px; margin-top:10px;" ) %>
+            <p></p>
+             <%= link_to t('Service'), pages_semitruck_path, class: "btn btn-default", data: {no_turbolink: true} %>
+        </div>
+    </div>
+<div class="col-md-4 feature">
+        <div class="panel">
+            <div class="panel-heading">
+                 <font color="bd9130"><h3 class="panel-title", style="font-family:Calibri"><strong>SEMI TRAILERS</strong></h3></font>
+            </div>
+              <%= image_tag("trailer.jpg", :size => "200x148", :alt => "Residentials", :style =>"margin-right:25px; margin-top:10px;" ) %>
+            <p></p>
+             <%= link_to t('Service'), pages_semitrailer_path, class: "btn btn-default", data: {no_turbolink: true} %>
+        </div>
+</div>
+</div>
+<div class="row" id="features">
+<div class="col-md-4 feature">
+        <div class="panel">
+            <div class="panel-heading">
+                 <font color="bd9130"><h3 class="panel-title", style="font-family:Calibri"><strong>HEAVY EQUIPMENT</strong></h3></font>
+            </div>
+             <%= image_tag("heavyequipment.png", :size => "150x130", :alt => "Residentials", :style =>"margin-right:25px; margin-top:10px;" ) %>
+            <p></p>
+             <%= link_to t('Service'), pages_heavyequipment_path, class: "btn btn-default", data: {no_turbolink: true} %>
+        </div>
+    </div>
+    <div class="col-md-4 feature">
+        
+    </div>
+    <div class="col-md-4 feature">
+        <div class="panel">
+            <div class="panel-heading">
+                 <font color="bd9130"><h3 class="panel-title", style="font-family:Calibri"><strong>FARM EQUIPMENT</strong></h3></font>
+            </div>
+             <%= image_tag("tractor2.jpg", :size => "160x130", :alt => "Residentials", :style =>"margin-right:25px; margin-top:10px;" ) %>
+            <p></p>
+             <%= link_to t('Service'), pages_farm_path, class: "btn btn-default", data: {no_turbolink: true} %>
+        </div>
+    </div>
+</div>
+</div>
