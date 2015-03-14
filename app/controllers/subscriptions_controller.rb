@@ -47,4 +47,5 @@ class SubscriptionsController < ApplicationController
         unless current_user.admin?
          redirect_to root_url, alert: "Sorry, Only Ontario's Only Admin can Delete a Subscription"
     end
+  end
 end
