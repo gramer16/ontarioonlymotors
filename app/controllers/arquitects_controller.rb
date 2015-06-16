@@ -34,7 +34,7 @@ class ArquitectsController < ApplicationController
  
  def create
      @arquitect = Arquitect.new(arquitect_params)
-    respond_to do |format|
+      respond_to do |format|
       if @arquitect.save
         format.html { redirect_to  @arquitect, notice: 'Service was successfully created.' }
         format.json { render :show, status: :created, location:  @arquitect }
