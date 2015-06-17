@@ -13,7 +13,6 @@ class ServicesController < ApplicationController
 
 
   def index
-     @services = Service.all
      @services = Service.where(:service_type => ["Car Wash"]) if :service_type.present?
     
   end
