@@ -1,6 +1,5 @@
 class ServicesController < ApplicationController
   before_action :set_service, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   before_filter :check_user, only: [:edit, :update, :destroy]
   
   def search
@@ -31,7 +30,6 @@ class ServicesController < ApplicationController
   # POST /commercialpropertiesforsales.json
   def create
     @service = Service.new(service_params)
-     @service.user_id = current_user.id
     respond_to do |format|
       if @service.save
         format.html { redirect_to @service, notice: 'Service was successfully created.' }
