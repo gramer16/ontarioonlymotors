@@ -79,10 +79,10 @@ class ServicesController < ApplicationController
     end
 
     def check_user
-      if current_user != @service.user
-        redirect_to root_url, alert: "Sorry, this service belongs to someone else"
-      end
+        unless current_user.admin?
+         redirect_to root_url, alert: "Sorry, Only Ontario's Only Admin can Delete a Subscription"
     end
+  end
 end
 
 
