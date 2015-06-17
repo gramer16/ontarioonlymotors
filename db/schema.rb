@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150616192855) do
+ActiveRecord::Schema.define(version: 20150617030459) do
 
   create_table "accountants", force: true do |t|
     t.string   "company_name"
     t.text     "company_description"
     t.text     "address"
     t.string   "city"
-    t.integer  "zipcode"
+    t.string   "zipcode"
     t.string   "contact_name"
     t.string   "company_website"
     t.string   "company_phone"
@@ -731,7 +731,7 @@ ActiveRecord::Schema.define(version: 20150616192855) do
     t.text     "company_description"
     t.text     "address"
     t.string   "city"
-    t.integer  "zipcode"
+    t.string   "zipcode"
     t.string   "contact_name"
     t.string   "company_website"
     t.string   "company_phone"

@@ -1,5 +1,6 @@
 class CashbuyersController < ApplicationController
   before_action :set_cashbuyer, only: [:show, :edit, :update, :destroy]
+  before_action :check_user, only: [:destroy, :edit]
 def search
     if params[:search].present?
      @cashbuyers = Cashbuyer.search(params[:search])
@@ -30,7 +31,6 @@ def search
 
   def create
     @cashbuyer = Cashbuyer.new(cashbuyer_params)
-     @residential.user_id = current_user.id
     respond_to do |format|
       if @cashbuyer.save
         format.html { redirect_to  @cashbuyer, notice: 'Service was successfully created.' }
