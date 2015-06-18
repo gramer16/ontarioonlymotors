@@ -28,7 +28,7 @@
   </div>
   <div class="col-md-4">
     <%= label_tag :type_of_property %><br>
-    <%= f.select :property_type, options_for_select([ ["Choose a Type of Property","Any Type of Property"],["Single Family","Single Family Home"],["Townhouse/Condo","Townhouse or Condo"],["Mid/Hi Condominium","High Condominium"],["Residential_Lots","Lots"],["Multi-Family Home","Multi Family Home"]]), class: "form-control" %><br>
+    <%= f.select :property_type, options_for_select([ ["Choose a Type of Motor","Any Type of Motor"],["Seda","Sedan"],["SUV","SUV"],["Pick up","Pick up"],["Semitruck","Semitruck"],["Heavy Equipment","Heavy Equipment"]]), class: "form-control" %><br>
   </div>
   <div class="col-md-4">
     <%= f.label :bedrooms %><br>
@@ -153,12 +153,12 @@
   </div>
   <div class="col-md-4">
     <%= f.label :Type_of_Construction %><br>
-    <%= f.select :construction_type, options_for_select([["New Construction", "New Construction"],["Renovated","Renovated"],["Needs Renovations", "Needs Renovations"]]), class: "form-control" %><br>
+    <%= f.select :construction_type, options_for_select([["New", "New"],["Repair","Repair"],["Needs Repairs", "Needs Repairs"]]), class: "form-control" %><br>
   </div>
  
   <div class="col-md-4">
-    <%= label_tag :nil, "Florida Area" %><br>
-    <%= f.select :florida_mlsarea, options_for_select([["North Florida", "North_Florida"],["Central Florida","Central_Florida"],["South Florida", "South_Florida"]]), class: "form-control" %><br><br>
+    <%= label_tag :nil, "Ontario_Area" %><br>
+    <%= f.select :florida_mlsarea, options_for_select([["North_Ontario", "North_Ontario"],["Central Ontario","Central_Ontario"],["South Ontario", "South_Ontario"]]), class: "form-control" %><br><br>
   </div>
   
   <br>
